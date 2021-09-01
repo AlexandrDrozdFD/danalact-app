@@ -1,0 +1,21 @@
+.main {
+  .slider {
+    .carousel.slide {
+      .carousel-inner {
+        .carousel-item {
+          width: 100%;
+          height: 100vh;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .carousel-item.baby {
+          background-image: url("../../images/dest/slider/DANALAC-baby.jpg");
+          .montserrat {
+            font-family: montserrat;
+          }
+        }
+      }
+    }
+  }
+}

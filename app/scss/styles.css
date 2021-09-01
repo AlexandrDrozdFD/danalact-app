@@ -11112,8 +11112,26 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #121528;
+}
+
+.main .slider .carousel.slide .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .slider .carousel.slide .carousel-inner .carousel-item.baby {
+  background-image: url("../../images/dest/slider/DANALAC-baby.jpg");
+}
+.main .slider .carousel.slide .carousel-inner .carousel-item.baby .montserrat {
+  font-family: montserrat;
 }
 
 /*# sourceMappingURL=styles.css.map */
