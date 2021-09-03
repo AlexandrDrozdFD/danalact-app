@@ -5,92 +5,342 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.min.css">
   <title>Gulp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
-<header>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light bg-opacity-75">
-    <div class="container-xxl">
-      <a class="navbar-brand" href="#">
-        <img src="./images/dest/header-icon/dana-logo.png" alt="DANALACT">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-               aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
 
-</header>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light bg-opacity-75 p-0">
+  <div class="container-xxl">
+    <a class="navbar-brand" href="#">
+      <img src="./images/dest/header-icon/dana-logo.png" alt="DANALACT">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="my-ul" class="ms-auto navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+                 viewBox="0 0 16 16">
+              <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--<header>-->
+<!--  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light bg-opacity-75">-->
+<!--    <div class="container-xxl">-->
+<!--      <a class="navbar-brand" href="#">-->
+<!--        <img src="./images/dest/header-icon/dana-logo.png" alt="DANALACT">-->
+<!--      </a>-->
+<!--      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"-->
+<!--              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
+<!--      <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--        <ul class="navbar-nav justify-content-end">-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" href="#">Home</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="#">Products</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item dropdown">-->
+<!--            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"-->
+<!--               aria-expanded="false">-->
+<!--              News-->
+<!--            </a>-->
+<!--            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--              <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--              <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--              <li>-->
+<!--                <hr class="dropdown-divider">-->
+<!--              </li>-->
+<!--              <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="#" >About</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="#" >Contact Us</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="#" >Languages</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--</header>-->
+
 <main class="main">
   <section class="slider">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active baby">
-          <div class="montserrat">DANALAC® BABY BISCUITS</div>
-          <div>IN THREE WONDERFUL FLAVORS</div>
-          <div>By DANA Dairy</div>
-        </div>
-        <div class="carousel-item">
-
-<!--          <img src="..." class="d-block w-100" alt="...">-->
-        </div>
-        <div class="carousel-item">
-          Slide 3
-<!--          <img src="..." class="d-block w-100" alt="...">-->
-        </div>
+        <div class="carousel-item active baby"></div>
+        <div class="carousel-item baby-biscuits"></div>
+        <div class="carousel-item baby-biscuits-food"></div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </section>
+  <section class="promo">
+    <div class="promo-content row">
+      <div class="col-6">
+        <div class="promo-img">
+          <img src="./images/dest/promo/biscuits-3.jpg" alt="bscts">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="promo-text">
+          text
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="container-xxl">
+      <div class="contact-container row gy-5">
+        <div class="contact-box col-xs-12 col-sm-6 col-lg-4">
+          <div class="contact-item">
+            <h3 class="contact-title" id="contact">
+              Contact Us
+            </h3>
+            <div class="contact-content">
+              <p class="contact-text">Contact us for all your requirements of top quality milk and dairy, and also
+                infant nutrition. We deliver to all world destinations.
+              </p>
+              <form action="/" class="contact-form">
+                <div class="form-input mb-2">
+                  <label class="form-label d-block mb-0" for="text-input">
+                    Your Name (required)
+                  </label>
+                  <input type="text" class="input w-100" id="text-input"/>
+                </div>
+                <div class="form-input mb-2">
+                  <label class="form-label d-block mb-0" for="email-input">
+                    Your Email (required)
+                  </label>
+                  <input type="text" class="input w-100" id="email-input"/>
+                </div>
+                <div class="form-input mb-2">
+                  <label class="form-label d-block mb-0" for="tel-input">
+                    Your Phone (required)
+                  </label>
+                  <input type="tel" class="input w-100" id="tel-input"/>
+                </div>
+                <div class="form-input mb-2">
+                  <label class="form-label d-block mb-0" for="text-input-1">
+                    Subject (Destination Country / Product)
+                  </label>
+                  <input type="text" class="input w-100" id="text-input-1"/>
+                </div>
+                <div class="form-input mb-4">
+                  <label class="form-label d-block mb-0" for="textarea-input">
+                    <span class="contact-message">Your Message</span>
+                  </label>
+                  <textarea class="textarea w-100" id="textarea-input"></textarea>
+                </div>
+                <div class="form-input mb-5">
+                  <label class="form-label">
+                    <input type="checkbox"/>
+                    Sign me up for your newsletter!
+                  </label>
+                </div>
+                <button class="btn btn-primary w-100">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box col-xs-12 col-sm-6 col-lg-4">
+          <div class="contact-item">
+            <h3 class="contact-title">
+              About Dana Dairy
+            </h3>
+            <div class="contact-content">
+              <div class="contact-text mb-4">
+                DANA Dairy is a major producer, manufacturer, and supplier of various milk products
+                to the world’s market. Through the years, we have come to take pride in the quality of our dairy
+                products
+                and the way we do business. We are proud to have been able to cater drinking UHT milk, various types of
+                milk
+                powders, various cheese, butter, ice cream powders, various condensed milk, and many other dairy items
+                to
+                the world industrial and consumer markets. We aim to provide excellence.
+              </div>
+              <div class="contact-text mb-4">
+                <strong>PRIVATE LABEL PRODUCTION</strong>
+              </div>
+              <div class="contact-text">
+                Through our rebranding and private label option, we don’t just produce dairy brands, but we create
+                value
+                and deliver wholesome food to world local markets, custom designed to and fit for the local culture and
+                taste.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box col-xs-12 col-sm-6 col-lg-4">
+          <div class="contact-item">
+            <h3 class="contact-title">
+              Correspondence
+            </h3>
+            <div class="contact-content correspondence p-2">
+              <div class="contact-content border-bottom-thin">
+                <div class="correspond-title mb-3">
+                  France
+                </div>
+                <div class="contact-text mb-3">
+                  <b>DANA Dairy Group</b>
+                  <br>
+                  <i>Marketing Office</i>
+                  <br>
+                  20 Rue Lavoisier, 95300 Pontoise, France
+                  <br>
+                  Tel: +33 1 84 88 65 76
+                </div>
+              </div>
+              <div class="contact-content border-bottom-thin">
+                <div class="correspond-title mb-3">
+                  Switzerland
+                </div>
+                <div class="contact-text">
+                  <b>DANA Dairy Group</b><br>
+                  Rue de Pré-Bois 14 <br>
+                  Meyrin - 1216 Geneva <br>
+                  Switzerland<br>
+                </div>
+              </div>
+              <div class="contact-content">
+                <div class="correspond-title mb-3">
+                  Estonia
+                </div>
+                <div class="contact-text">
+                  <b>Dana Europe OÜ</b><br>
+                  Kollane tn. 8-7<br>
+                  10147 Tallinn
+                  <br>
+                  Estonia
+                  <br>
+                  Tel: + 372 600 2374
+                </div>
+              </div>
+
+            </div>
+            <button class="btn btn-light mt-5">Contact Us Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container-xxl">
+      <div class="footer-content row align-items-center">
+        <div class="footer-rights col-md-3">
+          <div class="footer-info">2021 &copy; ALL RIGHTS RESERVED</div>
+        </div>
+        <div class="footer-nav col-md-6">
+          <nav class="footer-navigation">
+            <ul class="footer-navigation-list d-flex">
+              <li class="navigation-item">
+                <a href="http://www.danalac.com/" class="footer-link">Danalac</a>
+              </li>
+              <li class="navigation-item border-end border-start px-3">
+                <a href="https://www.danalacorganic.com/" class="footer-link">DANALAC Organic</a>
+              </li>
+              <li class="navigation-item">
+                <a href="http://www.danadairy.com/dana-dairy-policy/" class="footer-link">Policy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-icons col-md-3">
+          <ul class="icons">
+            <li class="icon">
+              <a href="https://www.facebook.com/danadairygroup1" target="_blank" title="Facebook"
+                 class="icon-link">
+                <i class="bi bi-facebook"></i>
+<!--                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"-->
+<!--                     class="bi bi-facebook" viewBox="0 0 16 16">-->
+<!--                  <path-->
+<!--                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>-->
+<!--                </svg>-->
+              </a>
+            </li>
+            <!--            <a href="https://www.linkedin.com/company/dana-dairy-group" target="_blank" title="LinkedIn"-->
+            <!--               class="socials-item"><i class="socials-item-icon linkedin"></i></a>-->
+            <!--            <a href="https://twitter.com/DanaDairy" target="_blank" title="Twitter" class="socials-item"><i-->
+            <!--                class="socials-item-icon twitter"></i></a>-->
+            <!--            <a href="https://instagram.com/groupdanadairy" target="_blank" title="Instagram" class="socials-item"><i-->
+            <!--                class="socials-item-icon instagram"></i></a>-->
+            <!--            <a href="https://www.pinterest.com/danamilk/" target="_blank" title="Pinterest" class="socials-item"><i-->
+            <!--                class="socials-item-icon pinterest"></i></a>-->
+            <!--            <a href="https://vine.co/u/1383084715925463040" target="_blank" title="Vimeo" class="socials-item"><i-->
+            <!--                class="socials-item-icon vimeo"></i></a>-->
+            <!--            <a href="https://www.youtube.com/user/Danadairygroup" target="_blank" title="YouTube"-->
+            <!--               class="socials-item"><i class="socials-item-icon youtube"></i></a>-->
+            <!--            <a href="https://www.flickr.com/photos/danadairy" target="_blank" title="Flickr" class="socials-item"><i-->
+            <!--                class="socials-item-icon flickr"></i></a>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-  <script src="js/app.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+<script src="js/app.min.js"></script>
 </body>
 </html>
