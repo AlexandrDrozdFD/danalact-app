@@ -1,0 +1,87 @@
+.main {
+  .slider {
+    .carousel.slide {
+      .carousel-inner {
+        .carousel-item {
+          width: 100%;
+          height: 90vh;
+          background-position: calc(80%) calc(60%);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .carousel-item.baby {
+          background-image: url("../../images/dest/slider/DANALAC-baby.jpg");
+        }
+
+        .carousel-item.baby-biscuits {
+          background-image: url("../../images/dest/slider/Danalac-baby-biscuits-baby-food.jpg");
+        }
+
+        .carousel-item.baby-biscuits-food {
+          background-image: url("../../images/dest/slider/DANALAC-baby-biscuits.jpg");
+        }
+      }
+    }
+  }
+
+  .product {
+    .container-xxl {
+      .product-section-title {
+
+        .product-caption {
+          color: #323232;
+          font-family: "Montserrat", sans-serif;
+        }
+
+        .underlined {
+          width: 125px;
+          height: 2px;
+          background-color: #f6a40e;
+        }
+
+        .product-section-title-text {
+          color: rgb(95, 114, 127);
+        }
+      }
+
+      .cards-container {
+        padding: 50px 0;
+
+        .card-wrapper {
+          .card {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+            .card-body {
+              margin-top: 30px;
+
+              .card-title {
+                margin-bottom: 40px;
+                color: #323232;
+                font-family: "Montserrat", sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 38px;
+              }
+
+              .card-text {
+                color: rgb(95, 114, 127);
+              }
+
+              .card-subtitle {
+                font-weight: 300;
+                font-family: 'Roboto', sans-serif;
+                font-size: 9px;
+                color: rgb(178, 178, 178);
+                letter-spacing: 3px;
+                line-height: 9px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+:target {
+  scroll-margin-top: 102px;
+}
+
+body {
+  min-width: 320px;
+}
