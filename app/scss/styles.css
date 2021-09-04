@@ -11149,6 +11149,47 @@ li + li {
 .main .slider .carousel.slide .carousel-inner .carousel-item.baby-biscuits-food {
   background-image: url("../../images/dest/slider/DANALAC-baby-biscuits.jpg");
 }
+.main .product .container-xxl .product-section-title .product-caption {
+  color: #323232;
+  font-family: "Montserrat", sans-serif;
+}
+.main .product .container-xxl .product-section-title .product-caption::before {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 2px;
+  background-color: #f6a40e;
+}
+.main .product .container-xxl .product-section-title .product-section-title-text {
+  color: #5f727f;
+}
+.main .product .container-xxl .cards-container {
+  padding: 50px 0;
+}
+.main .product .container-xxl .cards-container .card-wrapper .card .card-body {
+  margin-top: 30px;
+}
+.main .product .container-xxl .cards-container .card-wrapper .card .card-body .card-title {
+  margin-bottom: 40px;
+  color: #323232;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 38px;
+}
+.main .product .container-xxl .cards-container .card-wrapper .card .card-body .card-text {
+  color: #5f727f;
+}
+.main .product .container-xxl .cards-container .card-wrapper .card .card-body .card-subtitle {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 9px;
+  color: #b2b2b2;
+  letter-spacing: 3px;
+  line-height: 9px;
+}
+
 .contact {
   background-color: #212331;
   padding-top: 35px;
