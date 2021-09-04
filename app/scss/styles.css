@@ -11117,6 +11117,10 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+:target {
+  scroll-margin-top: 102px;
+}
+
 body {
   min-width: 320px;
 }
@@ -11132,7 +11136,7 @@ li + li {
 .main .slider .carousel.slide .carousel-inner .carousel-item {
   width: 100%;
   height: 90vh;
-  background-position: center;
+  background-position: calc(80%) calc(60%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -11140,13 +11144,9 @@ li + li {
   background-image: url("../../images/dest/slider/DANALAC-baby.jpg");
 }
 .main .slider .carousel.slide .carousel-inner .carousel-item.baby-biscuits {
-  padding-top: 200px;
-  padding-left: 170px;
   background-image: url("../../images/dest/slider/Danalac-baby-biscuits-baby-food.jpg");
 }
 .main .slider .carousel.slide .carousel-inner .carousel-item.baby-biscuits-food {
-  padding-top: 200px;
-  padding-left: 170px;
   background-image: url("../../images/dest/slider/DANALAC-baby-biscuits.jpg");
 }
 .contact {
@@ -11206,6 +11206,11 @@ ul {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.footer .container-xxl .footer-content .footer-rights {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .footer .container-xxl .footer-content .footer-rights .footer-info {
   color: #99a9b5;
 }
@@ -11225,15 +11230,21 @@ ul {
   color: #99a9b5;
   transition: 0.3s;
 }
+.footer .container-xxl .footer-content .footer-icons .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .footer .container-xxl .footer-content .footer-icons .icons .icon {
   list-style: none;
 }
 .footer .container-xxl .footer-content .footer-icons .icons .icon .icon-link .bi {
   color: white;
-  font-size: 35px;
+  font-size: 30px;
 }
 .footer .container-xxl .footer-content .footer-icons .icons .icon .icon-link:hover .bi {
-  color: khaki;
+  color: #f1662d;
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=styles.css.map */

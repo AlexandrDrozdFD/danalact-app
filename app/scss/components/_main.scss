@@ -3,28 +3,29 @@
     .carousel.slide {
       .carousel-inner {
         .carousel-item {
+          //min-width: 845px;
           width: 100%;
           height: 90vh;
-          background-position: center;
+          background-position: calc(80%) calc(60%);
           background-size: cover;
           background-repeat: no-repeat;
         }
+
         .carousel-item.baby {
           background-image: url("../../images/dest/slider/DANALAC-baby.jpg");
         }
+
         .carousel-item.baby-biscuits {
-          padding-top: 200px;
-          padding-left: 170px;
           background-image: url("../../images/dest/slider/Danalac-baby-biscuits-baby-food.jpg");
         }
+
         .carousel-item.baby-biscuits-food {
-          padding-top: 200px;
-          padding-left: 170px;
           background-image: url("../../images/dest/slider/DANALAC-baby-biscuits.jpg");
         }
       }
     }
   }
+
   .promo {
 
   }

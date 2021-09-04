@@ -11,6 +11,10 @@ ul {
     .footer-content {
 
       .footer-rights {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
         .footer-info {
           color: #99a9b5;
         }
@@ -41,6 +45,10 @@ ul {
 
       .footer-icons {
         .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
           .icon {
             list-style: none;
 
@@ -48,13 +56,14 @@ ul {
 
               .bi {
                 color: white;
-                font-size: 35px;
+                font-size: 30px;
               }
             }
 
             .icon-link:hover {
               .bi {
-                color: khaki;
+                color: #f1662d;
+                transition: .3s;
               }
             }
           }
