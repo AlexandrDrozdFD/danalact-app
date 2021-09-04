@@ -34,9 +34,7 @@
           font-family: "Montserrat", sans-serif;
         }
 
-        .product-caption::before {
-          content: "";
-          display: block;
+        .underlined {
           width: 125px;
           height: 2px;
           background-color: #f6a40e;
@@ -52,6 +50,8 @@
 
         .card-wrapper {
           .card {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
             .card-body {
               margin-top: 30px;
 

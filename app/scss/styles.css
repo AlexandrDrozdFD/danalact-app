@@ -11153,9 +11153,7 @@ li + li {
   color: #323232;
   font-family: "Montserrat", sans-serif;
 }
-.main .product .container-xxl .product-section-title .product-caption::before {
-  content: "";
-  display: block;
+.main .product .container-xxl .product-section-title .underlined {
   width: 125px;
   height: 2px;
   background-color: #f6a40e;
@@ -11165,6 +11163,9 @@ li + li {
 }
 .main .product .container-xxl .cards-container {
   padding: 50px 0;
+}
+.main .product .container-xxl .cards-container .card-wrapper .card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .main .product .container-xxl .cards-container .card-wrapper .card .card-body {
   margin-top: 30px;

@@ -1,8 +1,0 @@
-File from: [app/images/src/slider/Baby_biscuits.png]
-
-File to: [app/images/dest/slider/Baby_biscuits.png]
-
-Compression algorithm: [pngquant]
-
-Description: Error: Command failed: D:\alecd\MY_PROJECTS\danalact-app\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/images/dest/slider/Baby_biscuits.png app/images/src/slider/Baby_biscuits.png
-  error: failed writing image to app/images/dest/slider/Baby_biscuits.png (16)
